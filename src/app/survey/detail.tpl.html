@@ -1,0 +1,54 @@
+<div class="card">
+    <div class="card-header"><h3 class="topic-title">{{name}}</h3></div>
+    <div class="card-content">
+
+        <p>{{description}}</p>
+
+    </div>
+    <div class="card-footer">
+        发布时间: {{created_at}}
+    </div>
+
+</div>
+
+
+{{#each questions}}
+<form action="" method="GET" class="ajax-submit store-data">
+
+<div class="card">
+    <div class="card-header">{{name}}</div>
+    <div class="card-content">
+        <div class="list-block media-list">
+            <ul>
+                {{#each choices}}
+                <li class="item-content">
+                    <div class="item-media">
+                        {{#if ../multiple}}
+                            <input type=checkbox name="data_[{{../../id}}]" value="{{id}}">
+                        {{else}}
+                            <input type=radio name="data[{{../../id}}]" value="{{id}}">
+                        {{/if}}
+                    </div>
+                    <div class="item-inner">
+                        <div class="item-title-row">
+                            <div class="item-title">内容:{{name}}</div>
+                            <div class="item-subtitle">得票数:{{poll}}</div>
+
+                        </div>
+                    </div>
+                </li>
+                {{/each}}
+
+
+            </ul>
+        </div>
+    </div>
+
+</div>
+{{/each}}
+
+<div class="uploadbtn clear center" style="margin:20px;margin-left:30px;margin-right:30px ">
+    <a href="#" class="button button-raised form-to-json">提交</a>
+</div>
+</form>
+

@@ -1,0 +1,24 @@
+{{#each data}}
+<li data-id="{{id}}">
+    
+
+
+<div class="card ks-facebook-card">
+      <div class="card-header">
+        <!-- <div class="ks-facebook-avatar">
+          <img src="http://lorempixel.com/68/68/people/1/" width="34" height="34">
+        </div> -->
+        <div class="ks-facebook-name"> <a href="/app/activty/detail/{{id}}">{{name}}</a></div>
+        <div class="ks-facebook-date">开始时间:{{start_at}}~ 结束时间{{end_at}}</div>
+      </div>
+      <div class="card-content">
+        <div class="card-content-inner">
+            <a href="/app/activty/detail/{{id}}">
+              {{description}}
+            </a>
+        </div>
+      </div>
+      <div class="card-footer"> <a href="/app/activty/detail/{{id}}" class="link">报名</a></div>
+    </div>
+</li>
+{{/each}}

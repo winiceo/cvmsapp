@@ -1,23 +1,85 @@
 'use strict';
 
 import Constant from './constant';
+ 
+import $ from "jquery";
 
-export default {
-    getTopics(params) {
-        params.path = '/api/v1/topics/?page=' + params.page + '&tab=' + params.tab + '&limit=10';
+export default   {
+    getCounit(params) {
+        params.path = '/api/v1/counit?next_id=' + params.next_id + '&limit=10';
         request(params);
     },
-    getDetailById(params) {
-        params.path = '/api/v1/topic/' + params.id;
+    getActivty(params) {
+        params.path = '/api/v1/activty?next_id=' + params.next_id + '&tab=' + params.tab + '&limit=10';
         request(params);
-    }
+    },
+    getActivtyById(params) {
+        params.path = '/api/v1/activty/detail/'+params.id;
+        request(params);
+    },
+    getMyActivty(params) {
+        params.path = '/api/v1/myactivty?next_id=' + params.next_id + '&tab=' + params.tab + '&limit=10';
+        request(params);
+    },
+    getMyActivtyById(params) {
+        params.path = '/api/v1/myactivty/detail/'+params.id;
+        request(params);
+    },
+    getActivtyApply(params) {
+        params.path = '/api/v1/activty/apply/'+params.id;
+        request(params);
+    },
+    getVote(params) {
+        params.path = '/api/v1/vote?page=' + params.page + '&tab=' + params.tab + '&limit=10';
+        request(params);
+    },
+    getVoteById(params) {
+        params.path = '/api/v1/vote/detail/'+params.id;
+        request(params);
+    },
+    postVoteSubmit(params) {
+        params.path = '/api/v1/vote/save/'+params.id;
+        request(params);
+    },
+    getSurvey(params) {
+        params.path = '/api/v1/survey?page=' + params.page + '&tab=' + params.tab + '&limit=10';
+        request(params);
+    },
+    getSurveyById(params) {
+        params.path = '/api/v1/survey/detail/'+params.id;
+        request(params);
+    },
+    postSurveySubmit(params) {
+        params.path = '/api/v1/survey/save/'+params.id;
+        request(params);
+    },
+    getShop(params) {
+        params.path = '/api/v1/shop?page=' + params.page + '&tab=' + params.tab + '&limit=10';
+        request(params);
+    },
+    postOrderSubmit(params) {
+        params.path = '/api/v1/order/save/'+params.id;
+        request(params);
+    },
+    getAwardById(params) {
+        params.path = '/api/v1/award/detail/'+params.id;
+        request(params);
+    },
+    getUserOrder(params) {
+        params.path = '/api/v1/user/order?page=' + params.page + '&tab=' + params.tab + '&limit=10';
+        request(params);
+    },
+    getUserOrderDetail(params) {
+        params.path = '/api/v1/user/order/detail/'+params.id;
+        request(params);
+    },
 };
 
 function request(params) {
     var defaults = {
         url: Constant.SERVER_URL + params.path,
         type: 'GET',
-        contentType: 'application/json',
+        // contentType: 'application/json',
         dataType: 'json',
         complete: function(request, status) {}
     }
@@ -42,3 +104,5 @@ function request(params) {
     console.log('调用接口:\n%s,\n参数列表:', params.url, params.data);
     $.ajax(params);
 };
+
+ 

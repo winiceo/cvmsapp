@@ -22,3 +22,4 @@ export default {
 		return _m + '月' + _d + '日 ' + _h + ':' + _s;
     }
 };
+ 

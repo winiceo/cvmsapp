@@ -2,7 +2,7 @@
 
 export default {
     alert(text, callback){
-        myApp.modal({
+        window.application.modal({
             title: '提示',
             text,
             buttons: [{
@@ -14,7 +14,7 @@ export default {
         });
     },
     confrim(text, callback){
-        myApp.modal({
+        window.application.modal({
             title: '提示',
             text,
             buttons: [{

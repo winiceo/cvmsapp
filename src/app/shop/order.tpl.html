@@ -1,0 +1,26 @@
+
+
+{{#each data}}
+<li data-id="{{id}}">
+    <div class="card">
+        <div class="card-header">
+            <a href="/app/survey/detail/{{id}}"  data-ignoreCache="true" class="item-link item-content">
+                {{name}}</a></div>
+        <div class="card-content">
+            <a href="/app/award/detail/{{id}}">
+                <div class="mui-flex">
+                    <div class="image">
+                        <img src="{{avatar}}" width="200" height="200">
+                    </div>
+                    <div class="info cell">
+                        <h2>{{name}}</h2>
+                        <p>文明家庭评选活动文明家庭评选活动文明家庭评选活动文明家庭评选活动文明家庭评选活动文明家庭评选活动</p>
+                        <b><i>{{score}}</i>积分</b>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="card-footer"> </div>
+    </div>
+</li>
+{{/each}}

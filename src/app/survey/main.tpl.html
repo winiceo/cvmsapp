@@ -1,0 +1,15 @@
+{{#each data}}
+<li data-id="{{id}}">
+    <div class="card">
+        <div class="card-header">
+ 		<a href="/app/survey/detail/{{id}}"  data-ignoreCache="true" class="item-link item-content">
+        {{name}}</a></div>
+        <div class="card-content">
+            <div class="card-content-inner">
+                 <a href="/app/survey/detail/{{id}}"  data-ignoreCache="true" class="item-link item-content ajax">{{description}}</a>
+            </div>
+        </div>
+        <div class="card-footer">开始日期:{{start_at}} -结束日期{{end_at}}</div>
+    </div>
+</li>
+{{/each}}

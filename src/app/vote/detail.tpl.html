@@ -1,0 +1,29 @@
+<div class="card">
+    <div class="card-content">
+        <div class="card-content-inner">
+            <h3 class="topic-title">{{name}}</h3>
+            <div class="authr-info row">
+                发布时间: {{created_at}}
+            </div>
+            <p>{{description}}</p>
+        </div>
+    </div>
+</div>
+{{#each choices}}
+
+<div class="card">
+    <div class="card-header">{{name}}</div>
+    <div class="card-content">
+        <div class="list-block media-list">
+            <img src="{{../img_url}}{{avatar}}" width="100%"/>
+        </div>
+    </div>
+    <div class="card-footer">
+        <span>当前得票数:{{poll}}</span>
+        <p class="buttons-row">
+            <a href="#" class="button button-big button-fill button-raised color-pink vote" data-id="{{id}}">投他一票</a>
+        </p>
+    </div>
+</div>
+{{/each}}
+ 

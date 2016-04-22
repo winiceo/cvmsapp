@@ -15,5 +15,5 @@ export function showActionSheet (buttons) {
     ];
     Array.prototype.push.apply(normalBtn, buttons);
     var groups = [normalBtn, cancelBtn];
-    myApp.actions(groups);
+    window.application.actions(groups);
 };

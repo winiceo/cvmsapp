@@ -2,9 +2,9 @@
 
 export default {
     show(){
-        myApp.showIndicator();
+        window.application.showIndicator();
     },
     hide(){
-        myApp.hideIndicator();
+        window.application.hideIndicator();
     }
 };

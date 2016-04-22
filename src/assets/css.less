@@ -1,0 +1,1172 @@
+/* reset.css */
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select {
+    margin: 0;
+    padding: 0;
+}
+
+body, input, textarea, select, button, table {
+    font-size: 12px;
+    border: none;
+    outline: none;
+}
+
+body {
+    margin: 0 auto;
+    font-size: 12px;
+    color: #333;
+    background-color: #ECEFF1;
+    -webkit-text-size-adjust: none;
+}
+
+img, fieldset {
+    border: 0;
+}
+
+ul, li {
+    list-style: none;
+}
+
+h2, h3, h4, b, i, em, address {
+    font-style: normal;
+    font-weight: normal;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    outline: none;
+}
+
+a:focus {
+    outline: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+textarea {
+    resize: none;
+}
+
+.clear:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.clear {
+    zoom: 1;
+}
+
+.mui-flex {
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.cell {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-flex: 1;
+    width: 0;
+    max-width: 100%;
+    display: block;
+    -webkit-flex-basis: 0;
+    flex-basis: 0;
+    -ms-flex-preferred-size: 0
+}
+
+/*.mui-flex{display:box;display:-webkit-box;display: -moz-box;}
+.cell{ -moz-box-flex:1;
+    -webkit-box-flex:1;
+    box-flex:1;}*/
+.padlr10 {
+    padding: 0 10px
+}
+
+/*header*/
+.wx-header {
+    width: 100%;
+    height: 37px;
+    line-height: 37px;
+    background-image: url(/assets/images/zo-head-bg.jpg);
+}
+
+.wx-header h2 {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+
+.wx-body {
+    background: #f3f5f7;
+}
+
+/*个人中心*/
+.personalPhoto {
+    padding: 20px 0;
+    text-align: center;
+    background: #31a2e6;
+}
+
+.personalPhoto img {
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    display: block;
+    margin: 0 auto;
+}
+
+.personalInfo .mui-flex > .cell {
+    padding: 5px 0;
+}
+
+.personalInfo .cell > p {
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;;
+}
+
+.personalInfo .cell.one {
+    background: #23a6ec;
+}
+
+.personalInfo .cell.two {
+    background: #3bafed;
+}
+
+.personalInfo .cell.three {
+    background: #53b7ed;
+}
+
+.personalInfoCon > ul > li > div {
+    color: #666;
+    line-height: 30px;
+    padding: 6px 0;
+}
+
+.personalInfoCon > ul > li {
+    background: #fff;
+}
+
+.personalInfoCon > ul > li > div.personalIcon {
+    width: 45px;
+    text-align: center;
+    line-height: 0;
+}
+
+.personalIcon img {
+    width: 30px;
+    height: 30px;
+}
+
+.personalInfoCon > ul > li > div.personalAttr {
+    border-bottom: 1px solid #dbdbdb;;
+}
+
+.personalInfoCon > ul > li > div.cell.personalValue {
+    text-align: right;
+    padding: 6px 10px 6px 0;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.personalInfoCon > ul > li:nth-child(3n) {
+    margin-bottom: 10px;
+}
+
+.personalInfoCon > ul > li:nth-child(3n) div.personalAttr, .personalInfoCon > ul > li:nth-child(3n) div.personalValue {
+    border: 0;
+}
+
+/*工作证*/
+.cardId {
+    padding-bottom: 20px;
+    background-image: linear-gradient(to bottom, #07bdf9, #049dee);
+    background-image: -webkit-linear-gradient(top, #07bdf9, #049dee);
+    color: #fff;
+}
+
+.cardNumber {
+    line-height: 40px;
+    font-size: 14px;
+}
+
+.cardId h2 {
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.cardName {
+    line-height: 40px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.cardId img.photo {
+    display: block;
+    margin: 0 auto;
+}
+
+.cardIdbg {
+    position: relative;
+    background: #e8f2fe url(/assets/images/Idcard-1.png) no-repeat bottom center;
+    background-position-x: 33%;
+    background-size: 128px 198px;
+    padding-bottom: 300px;
+}
+
+.cardIdbg .ewm {
+    width: 123px;
+    height: 123px;
+    position: absolute;;
+    left: 50%;
+    margin-left: -61.5px;
+    top: 30px;;
+}
+
+.cardIdbg .ewm img {
+    width: 123px;
+    height: 123px;;
+}
+
+.cardIdbg img.bg {
+    width: 100%;;
+}
+
+.cardIdbg .heart {
+    position: absolute;
+    bottom: 25px;
+    right: 10px;
+    width: 24px;
+    -webkit-animation: heart 1s linear;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    -ms-animation: heart 1s linear;
+    -ms-animation-fill-mode: both;
+    -ms-animation-iteration-count: infinite;
+    animation: heart 1s linear;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+.cardIdbg .letter {
+    position: absolute;
+    right: 23px;
+    bottom: 5px;
+    color: #e5004f
+}
+
+@-webkit-keyframes heart {
+    0% {
+        opacity: 0.8;
+        -webkit-transform: scale(1, 1);
+    }
+    50% {
+        opacity: 1;
+        -webkit-transform: scale(1.2, 1.2);
+    }
+    100% {
+        opacity: 0.8;
+        -webkit-transform: scale(1, 1);
+    }
+}
+
+@keyframes heart {
+    0% {
+        opacity: 0.8;
+        transform: scale(1, 1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2, 1.2);
+    }
+    100% {
+        opacity: 0.8;
+        transform: scale(1, 1);
+    }
+}
+
+@-ms-keyframes heart {
+    0% {
+        opacity: 0.8;
+        -ms-transform: scale(1, 1);
+    }
+    50% {
+        opacity: 1;
+        -ms-transform: scale(1.2, 1.2);
+    }
+    100% {
+        opacity: 0.8;
+        -ms-transform: scale(1, 1);
+    }
+}
+
+/*社区活动*/
+.community {
+    background: #f2f5f7
+}
+
+.communityBanner img, .checkBanner img, .registBanner img, .employeeInfo-img img, .prizesBanner img {
+    width: 100%;
+    display: block;
+}
+
+.communityList {
+    margin-top: 10px;
+    border-top: 1px solid #dbdbdb;
+}
+
+.communityList h2.title {
+    color: #4dacec;
+    padding-left: 15px;
+    font-size: 16px;
+    line-height: 28px;
+    background: #fff;
+}
+
+.communityList ul li {
+    background: #fff;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    margin-bottom: 10px;
+}
+
+.communityList ul li div.mui-flex {
+    padding: 10px;
+}
+
+.communityList ul li div.image {
+    width: 143px;
+    height: 104px;
+}
+
+.communityList ul li div.image img {
+    width: 143px;
+    height: 104px;
+}
+
+.communityList ul li div.info {
+    margin-left: 10px;
+}
+
+.communityList ul li div.info > h2 {
+    color: #4dacec;
+    font-size: 16px;
+    line-height: 32px;
+    white-space: nowrap;
+    text-overflow: ellipsis;;
+    overflow: hidden;
+}
+
+.communityList ul li div.info > p {
+    line-height: 20px;
+    color: #333;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.communityList ul li div.baom, .integralList ul li div.baom, .check .uploadbtn {
+    border-top: 1px solid #dbdbdb;
+    padding: 5px 10px;
+}
+
+.communityList ul li div.baom a.communityBtn, .integralList ul li div.baom a.integralBtn, .check .uploadbtn a.checkBtn {
+    font-size: 14px;
+    background: #4dacec;
+    color: #fff;
+    padding: 5px 10px;
+    float: right;
+}
+
+/*共建单位*/
+.employee .employeeBanner {
+    padding: 25px 5px;
+    background-image: linear-gradient(to bottom, #1b76ff, #3591fd);
+    background-image: -webkit-linear-gradient(top, #1b76ff, #3591fd);
+    color: #fff;
+}
+
+.employee .employeeBanner > div.left {
+    width: 68px;
+    height: 92px;
+    background: url(/assets/images/employerLeft.png) no-repeat;
+    background-size: 68px 92px;
+}
+
+.employee .employeeBanner > div.center {
+    text-align: center;
+    font-family: "microsoft yahei";
+}
+
+.employee .employeeBanner > div.center h2 {
+    font-size: 28px;
+    line-height: 36px;
+}
+
+.employee .employeeBanner > div.center h3 {
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.employee .employeeBanner > div.center h4 {
+    font-size: 14px;
+    color: #c0dfff;
+}
+
+.employee .employeeBanner > div.center h4 span {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #c0dfff;
+    line-height: 30px;
+    display: inline-block
+}
+
+.employee .employeeBanner > div.right {
+    width: 68px;
+    height: 92px;
+    background: url(/assets/images/employerRight.png) no-repeat;
+    background-size: 68px 92px;
+}
+
+.employeeLetter {
+    height: 42px;
+    background: url(/assets/images/employerLetter.png) no-repeat center;
+    background-size: 203px 42px;
+    margin-top: -20px;
+    font-size: 20px;
+    color: #846207;
+    text-align: center;;
+    line-height: 38px;;
+}
+
+.employeeLists {
+    padding-bottom: 20px;
+}
+
+.employeeLists ul li {
+    margin: 10px 5px 0;
+    border: 1px solid #dbdbdb;
+    background: #fcfcfc;
+    padding: 5px;
+}
+
+.employeeLists .image {
+    width: 130px;
+    height: 90px;
+    border: 1px solid #dbdbdb;
+    text-align: center;
+    line-height: 90px;;
+}
+
+.employeeLists .info {
+    margin-left: 10px;
+}
+
+.employeeLists .info .attr {
+    font-size: 16px;
+    color: #666;
+    line-height: 18px;
+    padding-top: 5px;
+}
+
+.employeeLists .info .value {
+    font-size: 14px;
+    color: #009ff0;
+    line-height: 18px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-bottom: 5px;
+}
+
+.employeeLists .info .name {
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.employeeLists a .info .attr {
+    font-size: 16px;
+    color: #666;
+    line-height: 18px;
+    padding-top: 5px;
+}
+
+.employeeLists a .info .value {
+    font-size: 14px;
+    color: #009ff0;
+    line-height: 18px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-bottom: 5px;
+}
+
+.employeeLists a .info .name {
+    border-bottom: 1px solid #dbdbdb;
+}
+
+/*共建单位信息*/
+.employeeInfo-img, .employeeInfoCont li:nth-child(4), .employeeInfoCont li:nth-child(7) {
+    border-bottom: 1px solid #dbdbdb;;
+}
+
+.employeeInfoCont {
+    margin-top: 10px;
+    border-top: 1px solid #dbdbdb;
+}
+
+.employeeInfoCont li {
+    line-height: 30px;
+    background: #fff;;
+}
+
+.employeeInfoCont li div.attr {
+    width: 96px;
+    color: #4dacec;
+    padding-left: 10px;;
+}
+
+.employeeInfoCont li.companyName {
+    font-size: 14px;
+    border-bottom: 1px solid #DBDBDB;
+}
+
+.employeeInfoCont li div.cell {
+    text-align: right;
+    padding-right: 10px;
+    color: #666;
+    white-space: nowrap;
+    text-overflow: ellipsis;;
+    overflow: hidden;
+}
+
+.employeeInfoCont li:nth-child(5) {
+    margin-top: 10px;
+    border-top: 1px solid #dbdbdb;
+}
+
+/*积分奖励*/
+
+.integral {
+    background: #f2f5f7;
+    padding-top:55px;
+}
+
+.integralBanner {
+    position: relative;
+    height: 104px;
+    background: #e8f2fe url(/assets/images/integralBanner.png) no-repeat left center;
+    background-size: 156px 104px;
+}
+
+.integralBanner p {
+    width: 80px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 16px;
+    color: #666;;
+}
+
+.integralBanner p b {
+    font-size: 30px;
+    color: #6cc305;;
+}
+
+.integralLetter, .checkLetter {
+    margin-top: 2px;
+    margin-bottom: 10px;
+    border: 0px solid #dbdbdb;
+    background: #fff;;
+}
+
+.integralLetter h2.title, .checkLetter h2.title {
+    color: #4dacec;
+    padding-left: 15px;
+    font-size: 16px;
+    line-height: 28px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.integralLetter ul li, .checkLetter ul li {
+    padding: 5px 0;
+    color: #666;
+}
+
+.integralLetter ul li p, .checkLetter ul li p {
+    line-height: 20px;;
+}
+
+.integralLetter ul li p.attr, .checkLetter ul li p.attr {
+    width: 60px;
+    padding: 0 5px 0 15px;
+}
+
+.integralLetter ul li p.value, .checkLetter ul li p.value {
+    padding-right: 10px;
+}
+
+.integralList {
+    margin: 10px;;
+}
+
+.integralList ul li {
+    background: #fff;
+    border-top: 0px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    margin-bottom: 10px;
+}
+
+.integralList ul li div.mui-flex {
+    padding: 10px;
+}
+
+.integralList ul li div.image {
+    width: 123px;
+    height: 74px;
+}
+
+.integralList ul li div.image img {
+    width: 123px;
+    height: 74px;
+}
+
+.integralList ul li div.info {
+    margin-left: 10px;
+}
+
+.integralList ul li div.info > h2 {
+    color: #4dacec;
+    font-size: 16px;
+    line-height: 32px;
+    white-space: nowrap;
+    text-overflow: ellipsis;;
+    overflow: hidden;
+}
+
+.integralList ul li div.info > p {
+    height: 20px;
+    line-height: 20px;
+    color: #333;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.integralList ul li div.info > b {
+    font-size: 12px;;
+    color: #333;
+    line-height: 20px;
+}
+
+.integralList ul li div.info > b > i {
+    font-size: 16px;
+    color: #0d94dd;
+}
+
+/*考勤信息*/
+
+/*社区奖品*/
+.prizesBanner img {
+    width: 100%;
+    margin: 10px;
+}
+
+.prizesList a h2 {
+    color: #4dacec
+}
+
+.prizesList a p {
+    color: #333;
+}
+
+.prizesList a b {
+    color: #333;
+}
+
+.prizesList a b i {
+    color: #0d94dd;
+}
+
+/*奖品专区*/
+.prizesCont {
+
+}
+
+.prizesCont .cont {
+    background: #fff;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;;
+}
+
+.prizesCont .cont p {
+    line-height: 30px;;
+    color: #666;
+    padding: 0 10px
+}
+
+.prizesCont .cont p b {
+    font-size: 14px;
+    color: #4dacec;
+}
+
+.prizesCont .cont p em {
+    color: #ff6300
+}
+
+.prizesCont .cont:nth-child(2) {
+    margin-top: 10px;;
+}
+
+.prizesCont .cont h2 {
+    font-size: 14px;
+    color: #4dacec;
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+.prisenow {
+    display: block;
+    width: 96%;
+    margin: 10px auto;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    background: #4dacec;;
+}
+
+/*我的活动-可参与的活动*/
+.activityList {
+    border: 0;
+}
+
+.activityTabName {
+    height: 38px;
+    line-height: 38px;
+    border-bottom: 1px solid #dbdbdb;
+    background: #fff;
+}
+
+.activityTabName ul li {
+    text-align: center;
+}
+
+.activityTabName ul li a {
+    color: #666;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 37px;
+}
+
+.activityTabName ul li.active a {
+    color: #4dacec;
+    border-bottom: 1px solid #4dacec;
+    margin-top: 1px;
+}
+
+.activityList ul li div.beginTime, .activityList ul li div.endTime {
+    height: 26px;
+    line-height: 26px;
+    color: #666;
+}
+
+.communityList.activityList ul li div.info > h2 {
+    line-height: 45px;;
+}
+
+/*我要注册 */
+.personalInfoCon.registInfoCon > ul > li > div.cell.personalValue {
+    margin: 0 10px;
+}
+
+.registInfoCon > ul > li:nth-child(3n) {
+    margin-bottom: 0;;
+}
+
+.registInfoCon > ul > li:nth-child(3n) div.personalValue {
+    border-bottom: 1px solid #dbdbdb;;
+}
+
+.registInfoCon > ul > li:nth-child(6) {
+    margin-bottom: 10px;;
+}
+
+.personalInfoCon.registInfoCon > ul > li > div.personalAttr, .registInfoCon > ul > li:nth-child(6) div.personalValue, .registInfoCon > ul > li:nth-child(7) div.personalValue, .personalInfoCon.registInfoCon > ul > li:nth-child(8) div.personalValue {
+    border: 0;;
+}
+
+.personalInfoCon.registInfoCon > ul > li > div.personalValue input.input-text {
+    width: 96%;
+    padding: 8px 2%;
+    color: #666;;
+}
+
+.personalInfoCon.registInfoCon > ul > li > div.registCheckImg {
+    width: 90px;
+    height: 30px;
+}
+
+.personalInfoCon.registInfoCon > ul > li > div.registCheckImg img {
+    width: 90px;
+    height: 30px;
+}
+
+.personalInfoCon.registInfoCon > ul > li > div.noIcon {
+    padding-left: 15px;;
+}
+
+.personalInfoCon.registInfoCon > ul > li > div.personalValue .select-multiple {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 96%;
+    padding: 6px 2%;;
+    color: #666;
+    background: url(/assets/images/selectBtn.png) no-repeat right center;
+    background-size: 16px 17px;
+}
+
+.personalInfoCon.registInfoCon > ul > li > div.personalValue textarea {
+    width: 96%;
+    padding: 5px 2%;
+    line-height: 20px;
+    color: #666;
+}
+
+.registInfoCon > ul > li:last-child {
+    margin-top: 20px;
+}
+
+.registBtn {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 40px;;
+    box-sizing: border-box;;
+    border: 1px solid #1197df;
+    background-image: linear-gradient(to bottom, #4dacec, #049dee);
+    background-image: -webkit-linear-gradient(top, #4dacec, #049dee);
+    color: #fff;
+}
+
+/*问卷调查*/
+
+.questionnaireList {
+}
+
+.questionnaireList > ul > li {
+    margin-top: 10px;
+    background: #fff;
+    border-top: 1px solid #DBDBDB;
+    border-bottom: 1px solid #DBDBDB;
+}
+
+.questionnaireList > ul > li > a h2.title, .questionnaireInfo h2.title {
+    line-height: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #dbdbdb;
+    color: #0d94dd;
+    font-size: 12px;
+}
+
+.questionnaireList > ul > li > a div.star {
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    background: url(/assets/images/star.png) no-repeat center center;
+    background-size: 10px 10px;
+}
+
+.questionnaireList > ul > li > a div.cell.time {
+    padding: 10px;
+    line-height: 20px;;
+    color: #666;
+}
+
+.questionnaireList > ul > li > a div.attr {
+    width: 60px;
+    line-height: 20px;
+    color: #666;
+    padding-left: 10px;;
+}
+
+.questionnaireList > ul > li > a div.cell.value, .questionnaireInfo > ul > li > div.cell.value {
+    padding: 0px 10px 10px 0;
+    line-height: 20px;
+    color: #666;;
+}
+
+.questionnaireCont, .questionAndAnswer {
+    margin-top: 10px;
+}
+
+.questionnaireInfo {
+    background: #fff;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;;
+}
+
+.questionnaireInfo > ul > li > div.attr {
+    width: 40px;
+    color: #666;
+    padding: 10px;
+    line-height: 20px;;
+}
+
+.questionnaireInfo > ul > li > div.cell.value {
+    padding-top: 10px;;
+}
+
+.questionAndAnswer .topics .topic {
+    margin-top: 5px;
+    border-top: 1px solid #dbdbdb;
+    background: #fff;
+    border-bottom: 1px solid #DBDBDB;
+    padding: 10px;;
+}
+
+.questionAndAnswer .topics .topic:last-child {
+    border: 0;
+    background: #f2f2f2;;
+}
+
+.questionAndAnswer .topics .topic h2.title {
+    color: #0d94dd;
+    line-height: 30px;
+    font-size: 14px;;
+}
+
+.questionAndAnswer .topics .topic .question {
+    line-height: 20px;
+    color: #666;;
+}
+
+.questionAndAnswer .topics .topic .answer label.option {
+    position: relative;
+    display: block;
+    line-height: 20px;
+    padding: 5px 0 5px 20px;
+    color: #666;
+    margin-left: 20px;
+}
+
+.questionAndAnswer .topics .topic .answer label.option input[type="checkbox"], .questionAndAnswer .topics .topic .answer label.option input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    background: url(/assets/images/reqCheck.png) no-repeat left bottom;
+    background-size: 12px 12px;
+    position: absolute;
+    left: 0;
+    top: 6px;
+    appearance: none;
+    -webkit-appearance: none
+}
+
+.questionAndAnswer .topics .topic .answer label.option input[type="checkbox"]:checked, .questionAndAnswer .topics .topic .answer label.option input[type="radio"]:checked {
+    background: url(/assets/images/reqChecked.png) no-repeat left bottom;
+    background-size: 16px 13px;
+}
+
+.questionAndAnswer .topics .topic .answer input[type="text"], .questionAndAnswer .topics .topic .answer textarea.text-area {
+    border: 1px solid #dbdbdb;
+    padding: 5px;
+    color: #666;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 100%;;
+}
+
+.questionAndAnswer .topics .topic .answer textarea.text-area {
+    height: 100px;
+}
+
+.submit-btn {
+    width: 20%;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #0d94dd, #0d94dd);
+    background-image: -webkit-linear-gradient(top, #0d94dd, #0d94dd);
+    display: block;
+    margin: 30px auto;
+    border-radius: 5px;
+}
+
+/*分页按钮*/
+
+.pageBtn {
+    width: 80%;
+    margin: 20px 10%;
+    text-align: center;
+}
+
+.firstPage, .prevPage, .nextPage, .lastPage {
+    display: inline-block;
+    line-height: 34px;
+    width: 50px;
+    background: #dbdbdb;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid #fafafa;
+}
+
+.pageBtn span a {
+    display: block;
+    color: #fff;
+    background: #0d94dd;
+    border-radius: 5px;;
+}
+
+/*后补*/
+
+.integralList ul li div.baom span {
+    font-size: 14px;
+    color: #666;
+    padding: 5px 10px;
+    float: right;
+}
+
+/*
+投票选举*/
+
+.elected {
+    height: 100%;
+    background: #f3f5f7;
+    padding-top: 10px;;
+}
+
+.electedImg, .electedImg img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;;
+}
+
+.elected .electedInfo {
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    background: #fff;
+}
+
+.elected .electedInfo .mui-flex {
+    padding: 5px;;
+}
+
+.elected .electedInfo .cell h2 {
+    color: #4dacec;
+    font-size: 14px;
+    line-height: 25px;
+    padding-left: 10px;
+}
+
+.elected .electedInfo .cell p {
+    color: #666;
+    padding-left: 10px;
+}
+
+.elected .electedInfo h3 {
+    padding: 5px;
+    border-top: 1px solid #dbdbdb;
+    background: #fff;
+    color: #333;
+    line-height: 30px;;
+}
+
+.elected .electedCont .electedQuest {
+    padding-bottom: 5px;;
+}
+
+.elected .electedCont .electedQuest h3 {
+    padding: 5px;
+    color: #666;
+    line-height: 20px;;
+}
+
+.elected-num {
+    display: inline-block;
+    float: right;
+    color: #666;
+    line-height: 20px;;
+}
+
+.elected .electedCont ul li.mui-flex {
+    padding: 10px 5px;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    margin-top: -1px;;
+}
+
+.elected .electedCont ul li.mui-flex:last-child {
+    background: #fff;;
+}
+
+.elected .electedCont ul li label.elected-opiont {
+    width: 17px;
+    height: 17px;
+    margin-right: 5px;
+    display: block;
+    text-align: center;;
+    line-height: 17px;;
+}
+
+.elected .electedCont ul li label.elected-opiont input[type=checkbox] {
+    border: 1px solid #4DACEC;
+    background: #fff;
+    width: 15px;
+    height: 15px;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.elected .electedCont ul li label.elected-opiont input[type=checkbox]:checked {
+    background: #4DACEC;
+}
+
+.elected .electedCont ul li label.elected-opiont input[type=radio] {
+    border: 1px solid #4DACEC;
+    background: #fff;
+    width: 15px;
+    height: 15px;
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 50%;;
+}
+
+.elected .electedCont ul li label.elected-opiont input[type=radio]:checked {
+    background: #4DACEC;
+}
+
+.elected .electedCont ul li input.elected-btn {
+    width: 50%;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    background: #4DACEC;
+    margin: 10px auto;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+

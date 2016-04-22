@@ -1,0 +1,19 @@
+{{#each data}}
+<li data-id="{{id}}" class="mui-flex">
+
+    <div class="image">
+        <img src="/assets/images/publicImg.jpg" width="130" height="90"  />
+    </div>
+    <div class="info cell">
+        <div class="keys name">
+            <p class="attr">公司名称</p>
+            <p class="value">{{name}} </p>
+        </div>
+        <div class="keys time">
+            <p class="attr">赞助时间</p>
+            <p class="value">{{created_at}}</p>
+        </div>
+    </div>
+
+</li>
+{{/each}}
