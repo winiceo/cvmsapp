@@ -38,3 +38,8 @@ bower_components
 
 # Dist
 dist
+
+node_modules
+
+build
+config
